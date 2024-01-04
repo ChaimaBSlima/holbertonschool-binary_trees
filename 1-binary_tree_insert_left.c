@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_insert_left - a function that inserts
- * a node as the right-child of another node
+ * a node as the left-child of another node
  * @parent: A pointer to the parent of the node.
  * @value: The value of the new node.
  *
