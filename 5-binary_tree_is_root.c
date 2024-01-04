@@ -5,7 +5,7 @@
  * @node: A pointer to the node.
  *
  * Return:  1 if the node is a root else 0
- * 
+ *
  */
 int binary_tree_is_root(const binary_tree_t *node)
 {
