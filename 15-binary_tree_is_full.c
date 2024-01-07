@@ -31,7 +31,6 @@ int binary_tree_is_full(const binary_tree_t *tree)
 			stack[++top] = current->left;
 		if (current->right != NULL)
 			stack[++top] = current->right;
-
-		return (1);
 	}
+	return (1);
 }
