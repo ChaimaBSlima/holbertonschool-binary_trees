@@ -40,23 +40,21 @@ size_t binary_tree_depth(const binary_tree_t *tree)
  */
 const binary_tree_t *binary_tree_get_leaf(const binary_tree_t *tree)
 {
-    if (binary_tree_is_leaf(tree) == 1)
-        return (tree);
-    else
-    {
-        if (tree->left)
-            return (binary_tree_get_leaf(tree->left));
-    
-        else
-            return (binary_tree_get_leaf(tree->right));
-    }
+	if (binary_tree_is_leaf(tree) == 1)
+		return (tree);
+
+	if (tree->left)
+		return (binary_tree_get_leaf(tree->left));
+
+	else
+		return (binary_tree_get_leaf(tree->right));
 }
 
 /**
  * recursion - Checks if a binary tree is perfect recursively.
  * @tree: A pointer to the root node.
  * @leaf_depth: The depth of one leaf in the binary tree.
- * @level: current node.
+ * @current: current node.
  *
  * Return:  1 or 0.
  */
